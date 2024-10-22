@@ -25,9 +25,9 @@ const db_config = {
   ssl: {
     rejectUnauthorized: false, // Permite conexiones SSL sin verificar el certificado
   },
-  extra: {
-    connectionTimeoutMillis: 6000 // Tiempo máximo de espera de conexión en milisegundos
-  },
+  connectTimeout: 60000,  
+  // entities: [__dirname + '/../**/*.entity.{js,ts}'],
+  // migrations: [__dirname + '/../migrations/*.{js,ts}'],
 };
 
 export default registerAs('typeorm', () => db_config);

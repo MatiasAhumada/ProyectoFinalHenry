@@ -61,7 +61,6 @@ export class UserController {
     return this.userService.findAll();
   }
 
-
   @Get('dashboard')
   @UseGuards(AuthGuard)
   async findLoggedUser(@Req() request: Request) {
