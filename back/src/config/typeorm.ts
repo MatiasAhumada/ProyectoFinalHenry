@@ -26,7 +26,7 @@ const db_config = {
     rejectUnauthorized: false, // Permite conexiones SSL sin verificar el certificado
   },
   extra: {
-    connectionTimeoutMillis: 6000, // Tiempo máximo de espera de conexión en milisegundos
+    connectionTimeoutMillis: 6000 // Tiempo máximo de espera de conexión en milisegundos
   },
 };
 
