@@ -37,7 +37,7 @@ const MisCreditos = () => {
 
     if (externalReference) {
       navigate(`/user/credit/${externalReference}`);
-      
+      window.history.replaceState(null, "", window.location.pathname);
     }
   }, [user,navigate]);
 
