@@ -8,7 +8,7 @@ import { useAuth } from "../Context/AuthContext";
 
 const CreditDetail = () => {
   const { id } = useParams();
-  const { token}=useAuth()
+  const { token } = useAuth();
   const [creditInfo, setCreditInfo] = useState([]);
   const [mostrarLoading, setMostrarLoading] = useState(null);
 
@@ -64,13 +64,13 @@ const CreditDetail = () => {
     });
 
     if (idCred) {
-      paidShare(idCred,token);
+      paidShare(idCred, token);
     }
   }, [id]);
 
   const fetchCreditInfo = async (token) => {
     try {
-      const r = await findCreditsById(id,token);
+      const r = await findCreditsById(id, token);
       setCreditInfo(r.shares);
     } catch (error) {
       console.log("Error al obtener información del crédito:", error);
