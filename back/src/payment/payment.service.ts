@@ -25,9 +25,11 @@ export class PaymentService {
         },
       ],
       back_urls: {
+
         success: "http://localhost:5173/user/allcredits",
         failure: "http://localhost:5173/user/allcredits",
         pending: "http://localhost:5173/user/allcredits",
+
       },
       auto_return: 'approved',
       external_reference: id,
