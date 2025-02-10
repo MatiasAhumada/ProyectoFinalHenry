@@ -3,6 +3,7 @@ import axios from "axios";
 const apiURL = import.meta.env.VITE_APP_URL;
 
 export const registerUser = async (userData) => {
+  console.log(userData)
   try {
     const response = await axios.post(`${apiURL}/auth/signup`, userData, {
       headers: {

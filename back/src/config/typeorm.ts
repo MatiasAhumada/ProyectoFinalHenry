@@ -22,9 +22,10 @@ const db_config = {
   logging: true,
   entities: ['dist/**/entities/*.entity.{ts,js}'],
   migrations: ['dist/migrations/*.{js,ts}'],
-  ssl: {
-    rejectUnauthorized: false, // Permite conexiones SSL sin verificar el certificado
-  },
+  // ssl: {
+  //   rejectUnauthorized: false, // Permite conexiones SSL sin verificar el certificado
+  // },
+  ssl:false,
   connectTimeout: 60000,  
   // entities: [__dirname + '/../**/*.entity.{js,ts}'],
   // migrations: [__dirname + '/../migrations/*.{js,ts}'],

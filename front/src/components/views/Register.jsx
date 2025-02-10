@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../Context/AuthContext";
+import { loginUser, loguinAuth } from "../service/authService";
 
 const Register = () => {
 
